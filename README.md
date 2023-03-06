@@ -19,4 +19,19 @@ I've added the critical bug documents as Open Issues and labelled as a bug on th
   
   # Automated Tests:
   
+  I've added 3 automated tests:
+  * TestNoVotingWhileNotLoggedIn
+  * TestSuccessfulRegistration
+  * TestVoteWithoutComment
+
+To run these tests, please follow these steps:
+Command Line:
+* Clone this repo into a directory 
+* Open the directory in file explorer and type 'cmd' in the navigation field to open directory in command prompt.  Alternatively, open command prompt and type "cd <DIRPATH>"
+* Type dotnet test to run tests
+  
+Visual Studio:
+  * Clone this repo and open the solution file
+  * In Test Explorer, right click Buggy_Cars_Rating (3) and select "Run"
+  
   
