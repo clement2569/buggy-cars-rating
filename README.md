@@ -2,11 +2,13 @@
 
 # Test Approach:
 
-The test approach was mainly to perform manual unit tests to verify the main functionality offered on the site, including registration, login and voting, in the perspective of a user.
+The test approach for this task was to perform manual tests to verify the main functionality offered on the site, including registration, login and voting on the page in the perspective of a user.
 
-This involved manually testing and identifying any defects and prioritizing these to find the most critical issues and/or processes present and then also creating automated tests to quickly retest these items.  These tests consisted of mainly unit tests and integration tests where applicable.
+This involved testing different elements on the page and identifying any defects on the elements themselves or in the processes related to them, then prioritizing them based on how  these impacted user experience and the functionality of the site as a whole.  The top three were documented as open Issues on this repo.
 
-Also tested with different browsers including Google Chrome, Mozilla Firefox and Microsoft Edgeand considered mobile tests (due to lack of devices, only had an Android to check)
+After this, some automated tests were written using a Selenium Webdriver and XUnit framework to test critical processes or workflows.
+
+Some browser testing was done on Google Chrome, Mozilla Firefox and Microsoft Edge and mobile testing was considered but the only device for this I had on hand was my personal mobile device.
 
 # Bug Documents:
 
@@ -14,5 +16,7 @@ I've added the critical bug documents as Open Issues and labelled as a bug on th
   1) Car Model pages do not load on Mozilla Firefox 
   2) Password policies are unclear to users and impact user experience
   3) Navigating to Lancia Stratos model page leads to webpage being unresponsive
+  
+  # Automated Tests:
   
   
