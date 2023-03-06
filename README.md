@@ -1,1 +1,1 @@
-# buggy_cars_rating
+# buggy-cars-rating
