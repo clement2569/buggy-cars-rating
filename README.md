@@ -27,7 +27,7 @@ I've added the critical bug documents as Open Issues and labelled as a bug on th
 To run these tests, please follow these steps:
 
 **Command Line:**
-* Clone this repo into a directory 
+* Clone this repo via Github Desktop or download zip and extract into a directory.
 * Open the directory in file explorer and type 'cmd' in the navigation field to open directory in command prompt.  Alternatively, open command prompt and type "cd <DIRPATH>"
 * Type dotnet test to run tests
   
