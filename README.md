@@ -34,7 +34,7 @@ To run these tests, please follow these steps:
   
 
 * Clone this repo via Github Desktop or download zip and extract into a directory.
-* Open the directory in file explorer and type 'cmd' in the navigation field to open directory in command prompt.  Alternatively, open command prompt and type "cd <DIRPATH>"
+* Open the directory in file explorer and type 'cmd' in the navigation field to open directory in command prompt.  Alternatively, open command prompt and type "cd <DIRPATH>" - you should be in the directory that contains Buggy_Cars_Rating folder and the Buggy_Cars_Rating VS solution file.
 * Type dotnet test to run tests
   
 **Visual Studio:**
