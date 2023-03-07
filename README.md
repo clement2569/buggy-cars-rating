@@ -26,8 +26,6 @@ I've added the critical bug documents as Open Issues and labelled as a bug on th
 
 To run these tests, please follow these steps:
 
-**Command Line:**
-
 * Prerequisites:
    * Download https://download.visualstudio.microsoft.com/download/pr/cdd7a605-be77-47fe-a8ac-d982c8e5d692/c8abed93d34b110b4f3d3254e56de254/dotnet-runtime-6.0.14-win-x64.exe
    * Download .NET support https://dotnet.microsoft.com/en-us/download, .NET 7.0
@@ -37,8 +35,6 @@ To run these tests, please follow these steps:
 * Open the directory in file explorer and type 'cmd' in the navigation field to open directory in command prompt.  Alternatively, open command prompt and type "cd <DIRPATH>" - the directory you are in should contain a Buggy_Cars_Rating folder and the Buggy_Cars_Rating VS solution file.
 * Type dotnet test to run tests
   
-**Visual Studio:**
-  * Clone this repo and open the solution file.
-  * In Test Explorer, right click Buggy_Cars_Rating (3) and select "Run"
+
   
   
