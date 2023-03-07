@@ -4,8 +4,10 @@ namespace Buggy_Cars_Rating
 {
     internal class Utilities
     {
+        //Helper functions that are shared across the test cases.
 
-        //Generates new login name by adding a number based on entries in text file.
+
+        //Generates new login name by adding a number based on entries in text file.    
         public static string GenerateNewLogin(string _username)
         {
             string path = "./Automated_Users_List.txt";
@@ -18,6 +20,7 @@ namespace Buggy_Cars_Rating
             return loginName;
         }
 
+        //Registers a new user by filling the forms with provided login and password.  
         public static void RegisterNewUser(IWebDriver _driver, string loginName, string _password)
         {
             _driver.FindElement(By.Id("username")).SendKeys(loginName);
@@ -32,6 +35,7 @@ namespace Buggy_Cars_Rating
             Thread.Sleep(3000);
         }
 
+        //Login to the page with provided login name and password.
         public static void Login(IWebDriver _driver,string loginName, string password)
         {
             _driver.FindElement(By.Name("login")).SendKeys(loginName);

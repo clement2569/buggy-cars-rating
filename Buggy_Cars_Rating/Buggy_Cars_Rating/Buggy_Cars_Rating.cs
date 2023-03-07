@@ -1,7 +1,5 @@
-using Newtonsoft.Json;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-
 
 
 namespace Buggy_Cars_Rating
@@ -17,13 +15,20 @@ namespace Buggy_Cars_Rating
         public Buggy_Cars_Rating() 
         {
             _utils = new Utilities();
+
+            _driver = new ChromeDriver();
+            _driver.Manage().Window.Maximize();
+
+            //quick navigation urls
             _homeUrl = "https://buggy.justtestit.org";
             _alfaRomeoModelUrl = _homeUrl+"/model/c4u1mqnarscc72is00ng%7Cc4u1mqnarscc72is00sg";
             _registerUrl = _homeUrl + "/register";
-            _driver = new ChromeDriver();
-            _username = "bcr_automated_user_";
+            
+            //credentials
+
+            _username = "bcr_automated_user_";  //prefix of automated user
             _password = "Testing123!";
-            _driver.Manage().Window.Maximize();
+            
         }
 
         public void Dispose()
@@ -31,6 +36,8 @@ namespace Buggy_Cars_Rating
             _driver.Dispose();
         }
         
+
+        //Test that user is unable to vote while not logged in due via vote button.
         [Fact]
         public void TestNoVotingWhileNotLoggedIn()
         {
@@ -45,6 +52,8 @@ namespace Buggy_Cars_Rating
             //verify login requirement message
             Assert.Equal("You need to be logged in to vote.", loginRequiredMessage);
         }
+
+        //Test user can successfully register (and proceed to login as verification).
         [Fact]
         public void TestSuccessfulRegistration()
         {
@@ -74,6 +83,7 @@ namespace Buggy_Cars_Rating
             Assert.True(loginGreeting.Displayed);
         }
 
+        //Test that a logged in user can vote without comment and verify that the vote count has incremented by 1
         [Fact]
         public void TestVoteWithoutComment()
         
