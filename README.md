@@ -28,10 +28,10 @@ To run these tests, please follow these steps:
 
 **Command Line:**
 
-Prerequisites:
-* https://download.visualstudio.microsoft.com/download/pr/cdd7a605-be77-47fe-a8ac-d982c8e5d692/c8abed93d34b110b4f3d3254e56de254/dotnet-runtime-6.0.14-win-x64.exe
-* .NET support https://dotnet.microsoft.com/en-us/download, .NET 7.0
-
+* Prerequisites:
+   * Download https://download.visualstudio.microsoft.com/download/pr/cdd7a605-be77-47fe-a8ac-d982c8e5d692/c8abed93d34b110b4f3d3254e56de254/dotnet-runtime-6.0.14-win-x64.exe
+   * Download .NET support https://dotnet.microsoft.com/en-us/download, .NET 7.0
+  
 
 * Clone this repo via Github Desktop or download zip and extract into a directory.
 * Open the directory in file explorer and type 'cmd' in the navigation field to open directory in command prompt.  Alternatively, open command prompt and type "cd <DIRPATH>"
