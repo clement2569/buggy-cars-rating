@@ -10,7 +10,7 @@ namespace Buggy_Cars_Rating
         {
             string path = "./Automated_Users_List.txt";
             var textLines = File.ReadAllLines(path);
-            string loginName = _username + (textLines.Count() + 1).ToString();
+            string loginName = _username + textLines.Count().ToString();
             using (StreamWriter w = File.AppendText(path))
             {
                 w.WriteLine(loginName);
@@ -27,7 +27,7 @@ namespace Buggy_Cars_Rating
             _driver.FindElement(By.Id("password")).SendKeys(_password);
             _driver.FindElement(By.Id("confirmPassword")).SendKeys(_password);
 
-            Thread.Sleep(3000);
+            
             _driver.FindElement(By.XPath("//button[@type='submit' and text()='Register']")).Click();
             Thread.Sleep(3000);
         }

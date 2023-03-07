@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5zOE00mD9QX5c796gbJhvlHswbC8kAngZYg3pjwcFJ3v6D2+VJBLDWsKTuls6HbyvfNSWTAitNoty/Bfade7qw==",
+  "dgSpecHash": "UU/b5TbNXKtCzGZgJiyiQuPxWnu1Q56s6KJpGq3ih/1MAUX6iNNQx/gqEPU04UnrdKD8VyojdagZO49tZSS8Hw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cleme\\source\\repos\\Buggy_Cars_Rating\\Buggy_Cars_Rating\\Buggy_Cars_Rating.csproj",
+  "projectFilePath": "C:\\Users\\cleme\\Documents\\GitHub\\buggy-cars-rating\\Buggy_Cars_Rating\\Buggy_Cars_Rating\\Buggy_Cars_Rating.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cleme\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\cleme\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",

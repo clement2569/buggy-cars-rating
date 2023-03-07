@@ -5886,11 +5886,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cleme\\source\\repos\\Buggy_Cars_Rating\\Buggy_Cars_Rating\\Buggy_Cars_Rating.csproj",
+      "projectUniqueName": "C:\\Users\\cleme\\Documents\\GitHub\\buggy-cars-rating\\Buggy_Cars_Rating\\Buggy_Cars_Rating\\Buggy_Cars_Rating.csproj",
       "projectName": "Buggy_Cars_Rating",
-      "projectPath": "C:\\Users\\cleme\\source\\repos\\Buggy_Cars_Rating\\Buggy_Cars_Rating\\Buggy_Cars_Rating.csproj",
+      "projectPath": "C:\\Users\\cleme\\Documents\\GitHub\\buggy-cars-rating\\Buggy_Cars_Rating\\Buggy_Cars_Rating\\Buggy_Cars_Rating.csproj",
       "packagesPath": "C:\\Users\\cleme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cleme\\source\\repos\\Buggy_Cars_Rating\\Buggy_Cars_Rating\\obj\\",
+      "outputPath": "C:\\Users\\cleme\\Documents\\GitHub\\buggy-cars-rating\\Buggy_Cars_Rating\\Buggy_Cars_Rating\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cleme\\AppData\\Roaming\\NuGet\\NuGet.Config",

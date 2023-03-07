@@ -21,17 +21,16 @@ namespace Buggy_Cars_Rating
             _alfaRomeoModelUrl = _homeUrl+"/model/c4u1mqnarscc72is00ng%7Cc4u1mqnarscc72is00sg";
             _registerUrl = _homeUrl + "/register";
             _driver = new ChromeDriver();
-            _username = "automated_user_";
+            _username = "kc_automated_user_";
             _password = "Testing123!";
             _driver.Manage().Window.Maximize();
         }
+
         public void Dispose()
         {
             _driver.Dispose();
         }
-
-
-        //can do inline theory for all the models urls if considered necessary
+        
         [Fact]
         public void TestNoVotingWhileNotLoggedIn()
         {
@@ -93,20 +92,22 @@ namespace Buggy_Cars_Rating
             //login
             Utilities.Login(_driver, loginName, _password);
             Thread.Sleep(3000);
+
             //get the vote count before pressing vote
             int beforeVoteCount = Int32.Parse(_driver.FindElement(By.XPath("//h4//strong")).Text);
-            Thread.Sleep(3000);
+            
 
             _driver.FindElement(By.XPath("//button[@class='btn btn-success' and text()='Vote!']")).Click();
             Thread.Sleep(3000);
-            int afterVoteCount = Int32.Parse(_driver.FindElement(By.XPath("//h4//strong")).Text);
-            Thread.Sleep(3000);
+
+            int afterVoteCount = Int32.Parse(_driver.FindElement(By.XPath("//h4//strong")).Text);     
             var voteThank = _driver.FindElement(By.XPath("//div//p[@class='card-text']"));
 
             //verify the vote count is incremented by 1 after voting.
             Assert.Equal(afterVoteCount, beforeVoteCount + 1);
             //verify thank you message on voting.
             Assert.Equal("Thank you for your vote!", voteThank.Text);
+            Assert.True(voteThank.Displayed);
         }
     }
 }
