@@ -21,7 +21,7 @@ namespace Buggy_Cars_Rating
             _alfaRomeoModelUrl = _homeUrl+"/model/c4u1mqnarscc72is00ng%7Cc4u1mqnarscc72is00sg";
             _registerUrl = _homeUrl + "/register";
             _driver = new ChromeDriver();
-            _username = "kc_automated_user_";
+            _username = "bcr_automated_user_";
             _password = "Testing123!";
             _driver.Manage().Window.Maximize();
         }
